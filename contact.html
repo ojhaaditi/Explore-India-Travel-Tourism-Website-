@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Explore India</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-airplane"></i> Explore India
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our travel experts</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="mb-4">Send us a Message</h3>
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="">Select Subject</option>
+                                        <option value="booking">Booking Inquiry</option>
+                                        <option value="support">Customer Support</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="complaint">Complaint</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Feedback Form -->
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h3 class="mb-4">Share Your Feedback</h3>
+                            <form id="feedbackForm">
+                                <div class="mb-3">
+                                    <label class="form-label">How would you rate our service?</label>
+                                    <div class="rating-stars">
+                                        <i class="bi bi-star fs-3 text-muted" data-rating="1"></i>
+                                        <i class="bi bi-star fs-3 text-muted" data-rating="2"></i>
+                                        <i class="bi bi-star fs-3 text-muted" data-rating="3"></i>
+                                        <i class="bi bi-star fs-3 text-muted" data-rating="4"></i>
+                                        <i class="bi bi-star fs-3 text-muted" data-rating="5"></i>
+                                    </div>
+                                    <input type="hidden" id="rating" value="0">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="feedback" class="form-label">Your Feedback</label>
+                                    <textarea class="form-control" id="feedback" rows="3" placeholder="Tell us about your experience..."></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Would you recommend us?</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="recommend" id="recommendYes" value="yes">
+                                        <label class="form-check-label" for="recommendYes">Yes</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="recommend" id="recommendNo" value="no">
+                                        <label class="form-check-label" for="recommendNo">No</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-outline-primary">Submit Feedback</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="mb-4">Contact Information</h4>
+                            <div class="contact-info">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-geo-alt fs-4 text-primary me-3"></i>
+                                    <div>
+                                        <h6>Address</h6>
+                                        <p class="mb-0">Kalka Tower, Sakchi<br>Jamshedpur, Jharkhand 831001</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-telephone fs-4 text-primary me-3"></i>
+                                    <div>
+                                        <h6>Phone</h6>
+                                        <p class="mb-0">+91 9876543210<br>+91 7707064766</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-envelope fs-4 text-primary me-3"></i>
+                                    <div>
+                                        <h6>Email</h6>
+                                        <p class="mb-0">info@exploreindia.com<br>support@exploreindia.com</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock fs-4 text-primary me-3"></i>
+                                    <div>
+                                        <h6>Business Hours</h6>
+                                        <p class="mb-0">Monday - Saturday: 9AM - 8PM<br>Sunday: 10AM - 6PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h5 class="mb-3">Follow Us</h5>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-decoration-none" title="Facebook">
+                                    <i class="bi bi-facebook fs-4 text-primary"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none" title="Twitter">
+                                    <i class="bi bi-twitter fs-4 text-primary"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none" title="Instagram">
+                                    <i class="bi bi-instagram fs-4 text-primary"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none" title="LinkedIn">
+                                    <i class="bi bi-linkedin fs-4 text-primary"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Contact -->
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h5 class="mb-3">Emergency Contact</h5>
+                            <p class="small">For urgent travel assistance during your trip:</p>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-telephone-plus fs-5 text-danger me-2"></i>
+                                <strong>+91 7707064766</strong>
+                            </div>
+                            <p class="small text-muted mt-2">Available 24/7 for emergency support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-primary text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Explore India</h5>
+                    <p>Your trusted partner for unforgettable travel experiences across India.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="destinations.html" class="text-light">Destinations</a></li>
+                        <li><a href="services.html" class="text-light">Services</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <p><i class="bi bi-telephone"></i> +91 7707064766</p>
+                    <p><i class="bi bi-envelope"></i> info@exploreindia.com</p>
+                    <p><i class="bi bi-geo-alt"></i> Kalka Tower, Sakchi<br>Jamshedpur, Jharkhand 831001</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 Explore India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
